@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96BC50A5-389F-0713-C737-7ED1B6D1C3F2" name="T_ENDERECO">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>0F0687F5-7E09-5F32-CC9B-99165885B3C1</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_endereco" id="46287354-DE95-61F9-E407-F7B578827673">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>DB2A6B2B-0B39-623C-6C6D-EF1B9688321E</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_langradouro" id="46D3AC32-C989-3E57-2747-D1B2A9DE6691">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>1E24BA71-9718-AA8C-55ED-F030DE7D888C</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="340F90B1-A00E-6648-94C9-AC6CC149B13A" referredColumn="11D81BC9-EF59-8EE2-E2F4-445F1035683F"/>
+</associations>
+</Column>
+<Column name="T_BAIRRO_cd_bairro" id="D8B7FCCB-BBD7-C092-08D1-9C6712810BA2">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>44AC71C4-8487-34C5-6F5A-7438DAB39315</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6D27CE8-DDD1-8391-59B1-59AA19B17092" referredColumn="25EB872F-3D6A-2CA9-3040-4340485DAE19"/>
+</associations>
+</Column>
+<Column name="tp_user" id="75A780E3-8467-DD6E-1359-55E107C38105">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>D3A94E90-EB60-8217-F202-B18AAC6B07BC</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA2062F4-1957-FEA7-F2D3-203C73130F25" name="T_ENDERECO_PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>3CC25614-601D-2C11-79EC-D8B749B01441</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46287354-DE95-61F9-E407-F7B578827673"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67044354-23B7-D706-EE53-37E6F56C4DED" name="TP_LANGRAD_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>7CF06CD7-2A6C-B991-D363-751FF89AD925</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46D3AC32-C989-3E57-2747-D1B2A9DE6691"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4DA856C-5A34-6276-E9B3-CBE17B3C709D" name="T_BAIRRO_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>7A449C53-D9EA-0373-0742-DF350AE76C51</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8B7FCCB-BBD7-C092-08D1-9C6712810BA2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

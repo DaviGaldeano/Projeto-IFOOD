@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3036952-5E74-52F8-E2FF-D83F59CADD44" name="T_ENTREGA">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>BF35D7A0-47BE-F8CD-14DB-BB95B87D601F</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_tipo" id="A4DFF2C2-307E-4FEA-C7B3-726B6E183CCF">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>2E621058-0E64-BF07-CB01-0314676897C6</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_tipo" id="10C7581C-8635-A0DB-2B6E-7FBA6A0A7538">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>01BFDF94-2B01-8F6F-B65A-0F4EFD83107F</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_tipo" id="2DA496BB-1010-A13E-7E8D-D84DA875D446">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 23:24:34 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B999FCA1-1ACF-7E46-94FF-9EF43D37F20C" name="T_ENTREGA_PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>0EF54BAB-D7A1-6B51-6C24-760B9CF4D5A3</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4DFF2C2-307E-4FEA-C7B3-726B6E183CCF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

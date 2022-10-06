@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="090C095C-E8D4-9E19-FAF2-10370EA4B661" name="T_PAGAMENTO">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:57:43 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_pagamento" id="6FF75323-7023-5BB0-92ED-A7B16521770E">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:57:51 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_pedido" id="C9A4433F-F884-686D-724F-4F86FA2BB899">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:04:57 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1140F3FE-32BD-9C76-3B98-01029C2C1A3B" name="T_PAGAMENTO PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:34:10 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6FF75323-7023-5BB0-92ED-A7B16521770E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0A8F0759-9C4E-CF09-09F5-661E6CB32286" name="T_PEDIDO">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:26:32 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_pedido" id="3D4FA5AE-D390-9311-A946-607169C2E9A1">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:31:08 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_pedido" id="6A1E14EF-9984-4B99-AA3B-019456627B82">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:30:15 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_gorjeta" id="8EBA580D-8B99-E48A-81A1-DC71E59F647E">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:53:08 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_pedido" id="B0E066EB-C238-FF3B-DF92-3EC971AEE9B5">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:23:38 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_prazo" id="CC9F7285-A3E2-844C-154B-CD7D02605AA8">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:23:57 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cliente" id="2B9EB1CA-2C1D-15EF-C58D-6EBC7686AEF9">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:43:21 UTC</createdTime>
+<generatorID>C134ABC3-8E78-DDB9-46FD-6BD268E3A880</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>39247A3F-D569-3553-646B-71FB9ABAA97A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_tipo" id="213EC841-EDBE-CE4A-CA65-0F2F4B756A7E">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:52:13 UTC</createdTime>
+<generatorID>406CFFE4-930B-863B-78A9-CDEFB8921321</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>2E621058-0E64-BF07-CB01-0314676897C6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_pagamento" id="ECB2CFCC-6AF6-7781-DB63-71A55C703D62">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:34:19 UTC</createdTime>
+<generatorID>F1AA9C1A-09A7-5D6B-48F1-045346FECB94</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>6FF75323-7023-5BB0-92ED-A7B16521770E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_fornecedor" id="72E34894-B658-C047-6E86-1557B0BD6030">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:35:24 UTC</createdTime>
+<generatorID>5BF370CB-CB0C-BB8C-CB3E-8B6D6CC947D3</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>98D85897-7340-EC76-9E1B-F5C61CD6C20F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_entregador" id="6575AC1D-A376-BF88-709F-93BE0F11D991">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:35:24 UTC</createdTime>
+<generatorID>5BF370CB-CB0C-BB8C-CB3E-8B6D6CC947D3</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>5081568D-65F8-EFDD-8F46-CF8AD07187A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8E32AA7B-76B3-DCF5-3427-864843389014" name="T_PEDIDO PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:39:37 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3D4FA5AE-D390-9311-A946-607169C2E9A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

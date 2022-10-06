@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4DE06845-27E9-E2E6-28D2-A58A55D879D7" name="T_END_ENTREG">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_endereco" id="3A3F843F-C98E-5E93-5485-EDB1ED755BC4">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<generatorID>27D1DF18-3441-41A5-9911-14D75C189241</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<importedID>68EACED2-47C8-D3B1-5D8F-7041329158F0</importedID>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>DB2A6B2B-0B39-623C-6C6D-EF1B9688321E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_entregador" id="29048A47-E912-A930-8F96-9C6E21818191">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:41:49 UTC</createdTime>
+<generatorID>62FA3DEC-35D0-C450-5141-20A3EF2F17DB</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>590DE08A-33FA-3128-CB86-CF2A18F3FA47</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="665B103F-94B4-F481-DE8A-1CA6C53F7362" name="T_END_LOJA PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3A3F843F-C98E-5E93-5485-EDB1ED755BC4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

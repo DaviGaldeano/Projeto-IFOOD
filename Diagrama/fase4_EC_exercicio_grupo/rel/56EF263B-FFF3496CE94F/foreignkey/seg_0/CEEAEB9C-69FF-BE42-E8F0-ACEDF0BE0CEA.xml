@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CEEAEB9C-69FF-BE42-E8F0-ACEDF0BE0CEA" containerWithKeyObject="0BE6338E-0CD6-1BDF-259A-4C78D5457A49" localFKIndex="46A570D3-8CD1-1B4E-C8F3-E0F4202B5C44" name="T_END_ENTREG_T_ENTREGADOR_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>62FA3DEC-35D0-C450-5141-20A3EF2F17DB</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<referredTableLongName>T_ENTREGADOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DD2D6280-DE77-06A9-45AF-F730E2C927D9</referredTableID>
+<keyObject>E45DA3BE-5C1A-8242-671B-A8F245748899</keyObject>
+<referredKeyID>E45DA3BE-5C1A-8242-671B-A8F245748899</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_entregador</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

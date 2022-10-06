@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7642980C-91EF-78CF-6CB9-FE73DE854E78" name="T_TP_LANGRAD">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_langradouro" id="9214C8ED-31D3-CE77-7E9B-1E46362014FE">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<importedID>FA2C325E-FFD1-8B8B-758F-7E8EA57F635C</importedID>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_langradouro" id="E9CFEB0A-F166-DBDC-603C-8FD0539BC27B">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<importedID>C8B75B9F-3246-3F67-CABA-38B87D6F480F</importedID>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FB60D1B9-C806-D1B0-F14A-1E2C747A0DC0" name="T_TIPO_LANGRADOURO PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9214C8ED-31D3-CE77-7E9B-1E46362014FE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

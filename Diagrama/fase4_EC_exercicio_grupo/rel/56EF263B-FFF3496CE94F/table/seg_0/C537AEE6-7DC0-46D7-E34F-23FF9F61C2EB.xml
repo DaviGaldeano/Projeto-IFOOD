@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C537AEE6-7DC0-46D7-E34F-23FF9F61C2EB" name="T_CONTRATO">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>416F5C35-2924-1A31-5CFD-56CF63EBC76C</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_contrato" id="9B517F69-EADC-4A4A-7824-D9483862F676">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>48ACA821-8660-93B9-B8A7-B23DEBCFFBF4</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_contrato" id="428606FA-82A1-3BD5-AC21-CA84AF359386">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>F56F3E54-B386-9F03-F420-7E760F37F387</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_contrato" id="A88EE6BC-ACDC-B0FA-495D-7A7F494B47E5">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>D58CA2B1-39DF-74CB-2000-AF173A72354F</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F44ED87-AA64-A295-8517-AD193A50E8A2" name="T_CONTRATO_PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>70050D61-8B7F-30F3-62B6-2A4440EF6743</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9B517F69-EADC-4A4A-7824-D9483862F676"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

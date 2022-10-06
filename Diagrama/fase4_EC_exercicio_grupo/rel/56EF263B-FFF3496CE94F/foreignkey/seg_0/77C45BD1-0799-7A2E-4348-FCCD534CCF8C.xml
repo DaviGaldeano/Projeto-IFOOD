@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="77C45BD1-0799-7A2E-4348-FCCD534CCF8C" containerWithKeyObject="61F05AD5-2111-2B78-DAF0-3C4AEB47F91B" localFKIndex="278C343C-8DBE-3431-E06B-CEA7734495CD" name="T_PEDIDO_T_ENTREGA_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>406CFFE4-930B-863B-78A9-CDEFB8921321</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<referredTableLongName>T_ENTREGA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B3036952-5E74-52F8-E2FF-D83F59CADD44</referredTableID>
+<keyObject>B999FCA1-1ACF-7E46-94FF-9EF43D37F20C</keyObject>
+<referredKeyID>B999FCA1-1ACF-7E46-94FF-9EF43D37F20C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_entrega</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

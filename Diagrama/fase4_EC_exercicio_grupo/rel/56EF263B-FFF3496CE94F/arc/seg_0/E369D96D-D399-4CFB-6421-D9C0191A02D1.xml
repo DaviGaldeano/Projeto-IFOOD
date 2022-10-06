@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="E369D96D-D399-4CFB-6421-D9C0191A02D1" name="FKArc_2">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:48:30 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<mandatory>true</mandatory>
+<reverseArc>true</reverseArc>
+<table>96BC50A5-389F-0713-C737-7ED1B6D1C3F2</table>
+<discriminatorColumn>75A780E3-8467-DD6E-1359-55E107C38105</discriminatorColumn>
+<fkeys>
+<fkeyID>14CB6FE2-8888-1A6E-5FCA-AC16B1F2A26E</fkeyID>
+<fkeyID>616151A8-051B-864F-36E5-A6D48DCE5B7B</fkeyID>
+<fkeyID>FD99B15C-8845-4D9F-047F-AB7D9CDC6A40</fkeyID>
+</fkeys>
+</FKArc>

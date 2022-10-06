@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F46F9E35-F52C-3EED-D7FD-C9A6BC73E3F6" name="T_END_CLIENTE">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>A1D7C684-BBF9-9115-EE00-56BC1F2BC31E</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_ENDERECO_cd_endereco" id="77D11949-7E79-2F0E-A76A-B09C5CB3DD90">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>53E5B401-93D3-12D1-ED45-24D8262B22C6</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FD99B15C-8845-4D9F-047F-AB7D9CDC6A40" referredColumn="46287354-DE95-61F9-E407-F7B578827673"/>
+</associations>
+</Column>
+<Column name="T_CLIENTE_cd_cliente" id="223F71C5-9A1D-6962-31FE-7CCB94788FB6">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>3D9C4259-276C-5349-6E5D-7D1F9638C170</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE32B866-7262-BA96-E649-5ACE1A42AE7B" referredColumn="3289CE9E-CDC9-1CFF-4B08-7BDA5FFE3734"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="134F99FC-A124-B103-48B4-AC8DA3BF8759" name="T_END_CLIENTE_PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>8DB62364-915B-8C29-7465-0839C366F5AF</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77D11949-7E79-2F0E-A76A-B09C5CB3DD90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="510ACAD3-FDE1-0CB1-03DF-255E400A31B0" name="T_END_CLIENTE_T_CLIENTE_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>0206C696-15D5-3C7E-3FFE-1DFF04C681DB</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="223F71C5-9A1D-6962-31FE-7CCB94788FB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE51BE7C-BF30-73F8-4697-A6F6E2178315" name="T_END_CLIENTE_T_ENDERECO_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>28C1FBCE-8679-0844-029A-3B3BD32F4468</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77D11949-7E79-2F0E-A76A-B09C5CB3DD90"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

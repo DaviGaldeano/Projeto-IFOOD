@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" mainViewID="6072D4E8-82E6-1066-F570-832477D7AD8B">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:22:28 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F0464A6A-2F09-1C08-4D4C-CA1049913B3C" containerWithKeyObject="61F05AD5-2111-2B78-DAF0-3C4AEB47F91B" localFKIndex="2B25752D-E688-19EE-C4AA-390EA3846C18" name="T_PEDIDO_FORNECER_ENTREGAR_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>5BF370CB-CB0C-BB8C-CB3E-8B6D6CC947D3</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<referredTableLongName>FORNECER_ENTREGAR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D4180E41-92F7-D983-BD12-07DFEF94A77F</referredTableID>
+<keyObject>2EDC8524-F3E6-45C5-116D-31AB01CB4856</keyObject>
+<referredKeyID>2EDC8524-F3E6-45C5-116D-31AB01CB4856</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>T_FORNECEDOR_cd_fornecedor,T_ENTREGADOR_cd_entregador</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

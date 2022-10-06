@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F3442FAB-FABC-A7D9-FB0C-9B6DBAE38F03" containerWithKeyObject="4BF127DD-0180-49FE-491A-C983748D3D51" localFKIndex="2E6B09EE-0BB9-23CB-6437-6F4A0ECFED8D" name="T_CANCELAMENTO_T_PEDIDO_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>312A95EF-4355-F234-DE40-F8D75B89DD28</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<referredTableLongName>T_PEDIDO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>61F05AD5-2111-2B78-DAF0-3C4AEB47F91B</referredTableID>
+<keyObject>0D536CE5-239A-C7DA-08E6-3E3F302D0A7D</keyObject>
+<referredKeyID>0D536CE5-239A-C7DA-08E6-3E3F302D0A7D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_pedido</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

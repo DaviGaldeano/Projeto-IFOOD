@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="294EA570-BC22-3786-E73E-C8F7FA4F21EB" name="T_CANCELAMENTO">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:33:47 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cancelar" id="23CA6CDC-599D-DB30-7611-D20F027B2F5E">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:34:02 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_cancela" id="1B3D7497-0C49-1FFE-BD21-B70349B38998">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:34:16 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120</dataTypeSize>
+<ownDataTypeParameters>120,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_pedido" id="8E05C983-A471-3417-4E4B-BF2A8EA911E5">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:35:04 UTC</createdTime>
+<generatorID>312A95EF-4355-F234-DE40-F8D75B89DD28</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>3D4FA5AE-D390-9311-A946-607169C2E9A1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9EFBC968-442E-FC4D-328C-366BBC28177D" name="T_CANCELAMENTO PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:34:13 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>23CA6CDC-599D-DB30-7611-D20F027B2F5E</attributeRef>
+<attributeRef>8E05C983-A471-3417-4E4B-BF2A8EA911E5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

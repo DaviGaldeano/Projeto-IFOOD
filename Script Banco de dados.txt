@@ -1,0 +1,401 @@
+-- Gerado por Oracle SQL Developer Data Modeler 21.4.2.059.0838
+--   em:        2022-06-05 20:26:25 BRT
+--   site:      Oracle Database 11g
+--   tipo:      Oracle Database 11g
+
+
+
+-- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+
+-- predefined type, no DDL - XMLTYPE
+
+CREATE TABLE fornecer_entregar (
+    t_contrato_cd_contrato NUMBER(5) NOT NULL,
+    cd_fornecedor          NUMBER(5) NOT NULL,
+    cd_entregador          NUMBER(5) NOT NULL
+);
+
+ALTER TABLE fornecer_entregar ADD CONSTRAINT fornecer_entregar_pk PRIMARY KEY ( cd_fornecedor,
+                                                                                cd_entregador );
+
+CREATE TABLE item_pedido (
+    t_item_cd_item     NUMBER(5) NOT NULL,
+    t_pedido_cd_pedido NUMBER(5) NOT NULL,
+    nr_quantidade      NUMBER(5) NOT NULL
+);
+
+ALTER TABLE item_pedido ADD CONSTRAINT item_pedido_pk PRIMARY KEY ( t_item_cd_item,
+                                                                    t_pedido_cd_pedido );
+
+CREATE TABLE t_bairro (
+    cd_bairro          NUMBER(5) NOT NULL,
+    nm_bairro          VARCHAR2(100) NOT NULL,
+    t_cidade_cd_cidade NUMBER(5) NOT NULL
+);
+
+ALTER TABLE t_bairro ADD CONSTRAINT t_bairro_pk PRIMARY KEY ( cd_bairro );
+
+CREATE TABLE t_cancelamento (
+    cd_cancelar        NUMBER(5) NOT NULL,
+    ds_cancela         VARCHAR2(120) NOT NULL,
+    t_pedido_cd_pedido NUMBER(5) NOT NULL
+);
+
+ALTER TABLE t_cancelamento ADD CONSTRAINT t_cancelamento_pk PRIMARY KEY ( cd_cancelar,
+                                                                          t_pedido_cd_pedido );
+
+CREATE TABLE t_cidade (
+    cd_cidade          NUMBER(5) NOT NULL,
+    nm_cidade          VARCHAR2(100) NOT NULL,
+    t_estado_cd_estado NUMBER(5) NOT NULL
+);
+
+ALTER TABLE t_cidade ADD CONSTRAINT t_cidade_pk PRIMARY KEY ( cd_cidade );
+
+CREATE TABLE t_cliente (
+    cd_cliente NUMBER(5) NOT NULL,
+    nm_cliente VARCHAR2(120) NOT NULL,
+    nr_cpf     NUMBER(11) NOT NULL
+);
+
+ALTER TABLE t_cliente ADD CONSTRAINT t_cliente_pk PRIMARY KEY ( cd_cliente );
+
+CREATE TABLE t_contrato (
+    cd_contrato NUMBER(5) NOT NULL,
+    nm_contrato VARCHAR2(50) NOT NULL,
+    ds_contrato VARCHAR2(120) NOT NULL
+);
+
+ALTER TABLE t_contrato ADD CONSTRAINT t_contrato_pk PRIMARY KEY ( cd_contrato );
+
+CREATE TABLE t_end_cliente (
+    t_endereco_cd_endereco NUMBER(5) NOT NULL,
+    t_cliente_cd_cliente   NUMBER(5) NOT NULL
+);
+
+ALTER TABLE t_end_cliente ADD CONSTRAINT t_end_cliente_pk PRIMARY KEY ( t_endereco_cd_endereco );
+
+CREATE TABLE t_end_entreg (
+    t_endereco_cd_endereco     NUMBER(5) NOT NULL,
+    t_entregador_cd_entregador NUMBER(5) NOT NULL
+);
+
+ALTER TABLE t_end_entreg ADD CONSTRAINT t_end_entreg_pk PRIMARY KEY ( t_endereco_cd_endereco );
+
+CREATE TABLE t_end_forn (
+    t_endereco_cd_endereco     NUMBER(5) NOT NULL,
+    t_fornecedor_cd_fornecedor NUMBER(5) NOT NULL
+);
+
+CREATE UNIQUE INDEX t_end_forn__idx ON
+    t_end_forn (
+        t_endereco_cd_endereco
+    ASC );
+
+ALTER TABLE t_end_forn ADD CONSTRAINT t_end_forn_pk PRIMARY KEY ( t_endereco_cd_endereco,
+                                                                  t_fornecedor_cd_fornecedor );
+
+CREATE TABLE t_endereco (
+    cd_endereco        NUMBER(5) NOT NULL,
+    cd_langradouro     NUMBER(5) NOT NULL,
+    t_bairro_cd_bairro NUMBER(5) NOT NULL,
+    tp_user            VARCHAR2(10) NOT NULL
+);
+
+ALTER TABLE t_endereco
+    ADD CONSTRAINT fkarc_2_lov CHECK ( tp_user IN ( 'ENTREGADOR', 'FORNECEDOR', 'CLIENTE' ) );
+
+ALTER TABLE t_endereco ADD CONSTRAINT t_endereco_pk PRIMARY KEY ( cd_endereco );
+
+CREATE TABLE t_entrega (
+    cd_tipo NUMBER(5) NOT NULL,
+    nm_tipo VARCHAR2(50) NOT NULL,
+    ds_tipo VARCHAR2(120) NOT NULL
+);
+
+ALTER TABLE t_entrega ADD CONSTRAINT t_entrega_pk PRIMARY KEY ( cd_tipo );
+
+CREATE TABLE t_entregador (
+    cd_entregador NUMBER(5) NOT NULL,
+    nm_entregador VARCHAR2(120) NOT NULL,
+    nr_cpf        NUMBER(11) NOT NULL,
+    nt_avaliacao  NUMBER(2) NOT NULL,
+    nr_entregas   NUMBER(5) NOT NULL,
+    nr_rejeicao   NUMBER(5) NOT NULL
+);
+
+ALTER TABLE t_entregador ADD CONSTRAINT t_entregador_pk PRIMARY KEY ( cd_entregador );
+
+CREATE TABLE t_estado (
+    cd_estado NUMBER(5) NOT NULL,
+    nm_estado VARCHAR2(50) NOT NULL,
+    sg_estado VARCHAR2(2) NOT NULL
+);
+
+ALTER TABLE t_estado ADD CONSTRAINT t_estado_pk PRIMARY KEY ( cd_estado );
+
+CREATE TABLE t_fornecedor (
+    cd_fornecedor NUMBER(5) NOT NULL,
+    nm_fornecedor VARCHAR2(50) NOT NULL,
+    nr_cnpj       NUMBER(14) NOT NULL
+);
+
+ALTER TABLE t_fornecedor ADD CONSTRAINT t_fornecedor_pk PRIMARY KEY ( cd_fornecedor );
+
+CREATE TABLE t_item (
+    cd_item                    NUMBER(5) NOT NULL,
+    nm_item                    VARCHAR2(50) NOT NULL,
+    vl_unitario                NUMBER(10, 2) NOT NULL,
+    ds_item                    VARCHAR2(120) NOT NULL,
+    t_fornecedor_cd_fornecedor NUMBER(5) NOT NULL
+);
+
+ALTER TABLE t_item ADD CONSTRAINT t_item_pk PRIMARY KEY ( cd_item );
+
+CREATE TABLE t_pagamento (
+    cd_pagamento NUMBER(5) NOT NULL,
+    nm_pedido    VARCHAR2(50) NOT NULL
+);
+
+ALTER TABLE t_pagamento ADD CONSTRAINT t_pagamento_pk PRIMARY KEY ( cd_pagamento );
+
+CREATE TABLE t_pedido (
+    cd_pedido                NUMBER(5) NOT NULL,
+    vl_pedido                NUMBER(10, 2) NOT NULL,
+    vl_gorjeta               NUMBER(10, 2),
+    dt_pedido                DATE NOT NULL,
+    dt_prazo                 DATE NOT NULL,
+    t_cliente_cd_cliente     NUMBER(5) NOT NULL,
+    t_entrega_cd_tipo        NUMBER(5) NOT NULL,
+    t_pagamento_cd_pagamento NUMBER(5) NOT NULL,
+    cd_fornecedor            NUMBER(5) NOT NULL,
+    cd_entregador            NUMBER(5) NOT NULL
+);
+
+CREATE UNIQUE INDEX t_pedido__idx ON
+    t_pedido (
+        t_entrega_cd_tipo
+    ASC );
+
+CREATE UNIQUE INDEX t_pedido__idxv1 ON
+    t_pedido (
+        t_pagamento_cd_pagamento
+    ASC );
+
+ALTER TABLE t_pedido ADD CONSTRAINT t_pedido_pk PRIMARY KEY ( cd_pedido );
+
+CREATE TABLE t_tp_langrad (
+    cd_langradouro NUMBER(5) NOT NULL,
+    ds_langradouro VARCHAR2(100) NOT NULL
+);
+
+ALTER TABLE t_tp_langrad ADD CONSTRAINT t_tp_langrad_pk PRIMARY KEY ( cd_langradouro );
+
+ALTER TABLE item_pedido
+    ADD CONSTRAINT item_pedido_t_item_fk FOREIGN KEY ( t_item_cd_item )
+        REFERENCES t_item ( cd_item );
+
+ALTER TABLE item_pedido
+    ADD CONSTRAINT item_pedido_t_pedido_fk FOREIGN KEY ( t_pedido_cd_pedido )
+        REFERENCES t_pedido ( cd_pedido );
+
+ALTER TABLE t_endereco
+    ADD CONSTRAINT t_bairro_fk FOREIGN KEY ( t_bairro_cd_bairro )
+        REFERENCES t_bairro ( cd_bairro );
+
+ALTER TABLE t_bairro
+    ADD CONSTRAINT t_bairro_t_cidade_fk FOREIGN KEY ( t_cidade_cd_cidade )
+        REFERENCES t_cidade ( cd_cidade );
+
+ALTER TABLE t_cancelamento
+    ADD CONSTRAINT t_cancelamento_t_pedido_fk FOREIGN KEY ( t_pedido_cd_pedido )
+        REFERENCES t_pedido ( cd_pedido );
+
+ALTER TABLE t_cidade
+    ADD CONSTRAINT t_cidade_t_estado_fk FOREIGN KEY ( t_estado_cd_estado )
+        REFERENCES t_estado ( cd_estado );
+
+ALTER TABLE fornecer_entregar
+    ADD CONSTRAINT t_contrato_fk FOREIGN KEY ( t_contrato_cd_contrato )
+        REFERENCES t_contrato ( cd_contrato );
+
+ALTER TABLE t_end_cliente
+    ADD CONSTRAINT t_end_cliente_t_cliente_fk FOREIGN KEY ( t_cliente_cd_cliente )
+        REFERENCES t_cliente ( cd_cliente );
+
+ALTER TABLE t_end_cliente
+    ADD CONSTRAINT t_end_cliente_t_endereco_fk FOREIGN KEY ( t_endereco_cd_endereco )
+        REFERENCES t_endereco ( cd_endereco );
+
+ALTER TABLE t_end_entreg
+    ADD CONSTRAINT t_end_entreg_t_endereco_fk FOREIGN KEY ( t_endereco_cd_endereco )
+        REFERENCES t_endereco ( cd_endereco );
+
+ALTER TABLE t_end_entreg
+    ADD CONSTRAINT t_end_entreg_t_entregador_fk FOREIGN KEY ( t_entregador_cd_entregador )
+        REFERENCES t_entregador ( cd_entregador );
+
+ALTER TABLE t_end_forn
+    ADD CONSTRAINT t_end_forn_t_endereco_fk FOREIGN KEY ( t_endereco_cd_endereco )
+        REFERENCES t_endereco ( cd_endereco );
+
+ALTER TABLE t_end_forn
+    ADD CONSTRAINT t_end_forn_t_fornecedor_fk FOREIGN KEY ( t_fornecedor_cd_fornecedor )
+        REFERENCES t_fornecedor ( cd_fornecedor );
+
+ALTER TABLE fornecer_entregar
+    ADD CONSTRAINT t_entregador_fk FOREIGN KEY ( cd_entregador )
+        REFERENCES t_entregador ( cd_entregador );
+
+ALTER TABLE fornecer_entregar
+    ADD CONSTRAINT t_fornecedor_fk FOREIGN KEY ( cd_fornecedor )
+        REFERENCES t_fornecedor ( cd_fornecedor );
+
+ALTER TABLE t_item
+    ADD CONSTRAINT t_item_t_fornecedor_fk FOREIGN KEY ( t_fornecedor_cd_fornecedor )
+        REFERENCES t_fornecedor ( cd_fornecedor );
+
+ALTER TABLE t_pedido
+    ADD CONSTRAINT t_pedido_fornecer_entregar_fk FOREIGN KEY ( cd_fornecedor,
+                                                               cd_entregador )
+        REFERENCES fornecer_entregar ( cd_fornecedor,
+                                       cd_entregador );
+
+ALTER TABLE t_pedido
+    ADD CONSTRAINT t_pedido_t_cliente_fk FOREIGN KEY ( t_cliente_cd_cliente )
+        REFERENCES t_cliente ( cd_cliente );
+
+ALTER TABLE t_pedido
+    ADD CONSTRAINT t_pedido_t_entrega_fk FOREIGN KEY ( t_entrega_cd_tipo )
+        REFERENCES t_entrega ( cd_tipo );
+
+ALTER TABLE t_pedido
+    ADD CONSTRAINT t_pedido_t_pagamento_fk FOREIGN KEY ( t_pagamento_cd_pagamento )
+        REFERENCES t_pagamento ( cd_pagamento );
+
+ALTER TABLE t_endereco
+    ADD CONSTRAINT tp_langrad_fk FOREIGN KEY ( cd_langradouro )
+        REFERENCES t_tp_langrad ( cd_langradouro );
+
+CREATE OR REPLACE TRIGGER arc_fkarc_2_t_end_entreg BEFORE
+    INSERT OR UPDATE OF t_endereco_cd_endereco ON t_end_entreg
+    FOR EACH ROW
+DECLARE
+    d VARCHAR2(10);
+BEGIN
+    SELECT
+        a.tp_user
+    INTO d
+    FROM
+        t_endereco a
+    WHERE
+        a.cd_endereco = :new.t_endereco_cd_endereco;
+
+    IF ( d IS NULL OR d <> 'ENTREGADOR' ) THEN
+        raise_application_error(-20223, 'FK T_END_ENTREG_T_ENDERECO_FK in Table T_END_ENTREG violates Arc constraint on Table T_ENDERECO - discriminator column tp_user doesn''t have value ''ENTREGADOR''');
+    END IF;
+
+EXCEPTION
+    WHEN no_data_found THEN
+        NULL;
+    WHEN OTHERS THEN
+        RAISE;
+END;
+/
+
+CREATE OR REPLACE TRIGGER arc_fkarc_2_t_end_forn BEFORE
+    INSERT OR UPDATE OF t_endereco_cd_endereco ON t_end_forn
+    FOR EACH ROW
+DECLARE
+    d VARCHAR2(10);
+BEGIN
+    SELECT
+        a.tp_user
+    INTO d
+    FROM
+        t_endereco a
+    WHERE
+        a.cd_endereco = :new.t_endereco_cd_endereco;
+
+    IF ( d IS NULL OR d <> 'FORNECEDOR' ) THEN
+        raise_application_error(-20223, 'FK T_END_FORN_T_ENDERECO_FK in Table T_END_FORN violates Arc constraint on Table T_ENDERECO - discriminator column tp_user doesn''t have value ''FORNECEDOR''');
+    END IF;
+
+EXCEPTION
+    WHEN no_data_found THEN
+        NULL;
+    WHEN OTHERS THEN
+        RAISE;
+END;
+/
+
+CREATE OR REPLACE TRIGGER arc_fkarc_2_t_end_cliente BEFORE
+    INSERT OR UPDATE OF t_endereco_cd_endereco ON t_end_cliente
+    FOR EACH ROW
+DECLARE
+    d VARCHAR2(10);
+BEGIN
+    SELECT
+        a.tp_user
+    INTO d
+    FROM
+        t_endereco a
+    WHERE
+        a.cd_endereco = :new.t_endereco_cd_endereco;
+
+    IF ( d IS NULL OR d <> 'CLIENTE' ) THEN
+        raise_application_error(-20223, 'FK T_END_CLIENTE_T_ENDERECO_FK in Table T_END_CLIENTE violates Arc constraint on Table T_ENDERECO - discriminator column tp_user doesn''t have value ''CLIENTE''');
+    END IF;
+
+EXCEPTION
+    WHEN no_data_found THEN
+        NULL;
+    WHEN OTHERS THEN
+        RAISE;
+END;
+/
+
+
+
+-- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
+-- 
+-- CREATE TABLE                            19
+-- CREATE INDEX                             3
+-- ALTER TABLE                             41
+-- CREATE VIEW                              0
+-- ALTER VIEW                               0
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           3
+-- ALTER TRIGGER                            0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE STRUCTURED TYPE BODY              0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE MATERIALIZED VIEW LOG             0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- REDACTION POLICY                         0
+-- 
+-- ORDS DROP SCHEMA                         0
+-- ORDS ENABLE SCHEMA                       0
+-- ORDS ENABLE OBJECT                       0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

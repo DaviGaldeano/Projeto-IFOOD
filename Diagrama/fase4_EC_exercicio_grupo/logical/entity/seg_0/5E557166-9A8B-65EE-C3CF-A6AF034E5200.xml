@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5E557166-9A8B-65EE-C3CF-A6AF034E5200" name="ITEM_PEDIDO">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:13:19 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_item" id="41C54C45-067F-CC64-BB99-869A241AE4D9">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:25:46 UTC</createdTime>
+<generatorID>FA260BEA-BC2A-4E52-2DE8-3E904676E416</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>59CEF121-BFE6-1923-D715-D8709D72DBC0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_pedido" id="FC11E4FB-AA0B-05D3-43DC-E698A198FCC0">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:26:00 UTC</createdTime>
+<generatorID>B92328F2-CEEF-2B18-01B4-1B075BFA4DC1</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>3D4FA5AE-D390-9311-A946-607169C2E9A1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_quantidade" id="31DFBC6E-44AD-F603-A062-5B543210FA5F">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:27:13 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A5D31F08-1839-C6B2-3C09-A1CDB45EFF78" name="ITEM_PEDIDO PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:25:55 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>41C54C45-067F-CC64-BB99-869A241AE4D9</attributeRef>
+<attributeRef>FC11E4FB-AA0B-05D3-43DC-E698A198FCC0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

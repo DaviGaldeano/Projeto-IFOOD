@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_34" directorySegmentName="seg_0" id="5BF370CB-CB0C-BB8C-CB3E-8B6D6CC947D3">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:35:24 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<sourcePk>13648D08-947A-48BF-BB86-A8D5487F275E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4A28A7F5-91D4-E02A-D631-24345B9020E8</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0A8F0759-9C4E-CF09-09F5-661E6CB32286</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

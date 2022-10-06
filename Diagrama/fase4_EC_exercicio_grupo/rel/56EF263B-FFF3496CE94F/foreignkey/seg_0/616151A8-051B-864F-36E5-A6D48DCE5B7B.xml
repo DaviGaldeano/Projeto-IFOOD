@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="616151A8-051B-864F-36E5-A6D48DCE5B7B" containerWithKeyObject="D89C6CF7-C0A8-BF81-DCDF-E754413C86D7" localFKIndex="F174BBAF-AE7C-FFD0-3F79-D2F021F08667" name="T_END_FORN_T_ENDERECO_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>E805371D-6AF6-0627-F93C-B548DDC1B230</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<referredTableLongName>T_ENDERECO</referredTableLongName>
+<arc>E369D96D-D399-4CFB-6421-D9C0191A02D1</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>96BC50A5-389F-0713-C737-7ED1B6D1C3F2</referredTableID>
+<keyObject>FA2062F4-1957-FEA7-F2D3-203C73130F25</keyObject>
+<referredKeyID>FA2062F4-1957-FEA7-F2D3-203C73130F25</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_endereco</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>FORNECEDOR</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

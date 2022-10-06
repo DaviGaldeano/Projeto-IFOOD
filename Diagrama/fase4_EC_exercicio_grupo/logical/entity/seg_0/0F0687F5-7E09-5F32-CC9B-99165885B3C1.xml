@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0F0687F5-7E09-5F32-CC9B-99165885B3C1" name="T_ENDERECO">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_endereco" id="DB2A6B2B-0B39-623C-6C6D-EF1B9688321E">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<importedID>3B5BF443-3E4D-D976-7245-EEB71368CD85</importedID>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_langradouro" id="1E24BA71-9718-AA8C-55ED-F030DE7D888C">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<generatorID>7CF06CD7-2A6C-B991-D363-751FF89AD925</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<importedID>E6E21208-33A8-CD00-A86F-CD5C043BDEFF</importedID>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>9214C8ED-31D3-CE77-7E9B-1E46362014FE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_bairro" id="44AC71C4-8487-34C5-6F5A-7438DAB39315">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<generatorID>7A449C53-D9EA-0373-0742-DF350AE76C51</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<importedID>2693EC6C-E83B-58C1-5065-A60CEA3669F0</importedID>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>9E057B14-672D-610F-E317-CA5028DB4F3B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tp_user" id="D3A94E90-EB60-8217-F202-B18AAC6B07BC">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<importedID>38D66563-FB45-7D75-7144-C994198A2FBA</importedID>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3CC25614-601D-2C11-79EC-D8B749B01441" name="T_ENDERECO PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:37:29 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DB2A6B2B-0B39-623C-6C6D-EF1B9688321E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

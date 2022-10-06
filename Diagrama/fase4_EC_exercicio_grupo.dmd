@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="fase4_EC_exercicio_grupo" id="7B431E19-DB66-F5F4-15DC-6704C0595D97" version="3.5">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-02 23:22:27 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7B431E19-DB66-F5F4-15DC-6704C0595D97</designId>
+</OSDM_Design>

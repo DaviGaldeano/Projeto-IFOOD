@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="340F90B1-A00E-6648-94C9-AC6CC149B13A" containerWithKeyObject="96BC50A5-389F-0713-C737-7ED1B6D1C3F2" localFKIndex="67044354-23B7-D706-EE53-37E6F56C4DED" name="TP_LANGRAD_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>7CF06CD7-2A6C-B991-D363-751FF89AD925</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<referredTableLongName>T_TP_LANGRAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F6B02AC5-7E7D-2FED-20D2-AEF360153C87</referredTableID>
+<keyObject>32E6E3CC-923F-C5A7-E7DF-4AC128A31AD5</keyObject>
+<referredKeyID>32E6E3CC-923F-C5A7-E7DF-4AC128A31AD5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_langradouro</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

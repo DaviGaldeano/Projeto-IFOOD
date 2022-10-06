@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D89C6CF7-C0A8-BF81-DCDF-E754413C86D7" name="T_END_FORN">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>0502FFA7-2AA3-C929-94D3-20CFF86625A1</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="T_ENDERECO_cd_endereco" id="B3419246-6266-E86C-500E-7658CEC4D052">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>0E9C1039-2651-294A-8E2D-604199DA3C4A</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="616151A8-051B-864F-36E5-A6D48DCE5B7B" referredColumn="46287354-DE95-61F9-E407-F7B578827673"/>
+</associations>
+</Column>
+<Column name="T_FORNECEDOR_cd_fornecedor" id="DAF749D1-C72B-54BC-EB50-260595D351B7">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>199B7C3B-E668-000B-AB0E-3805931E3CF6</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AAF4693-53FE-719E-9521-5C3032B0840A" referredColumn="427BD024-93D4-5F37-9641-4689A45BF2DA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="737A9023-9F18-4DDF-AA0D-42201F0EC9DF" name="T_END_FORN_PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>C9B4B2C0-296B-9AD7-A44C-82435A3CCD32</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3419246-6266-E86C-500E-7658CEC4D052"/>
+<colUsage columnID="DAF749D1-C72B-54BC-EB50-260595D351B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4E4E6D7-0AD2-0E46-5067-CFBA5E90C6A9" name="T_END_FORN__IDX">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>E805371D-6AF6-0627-F93C-B548DDC1B230</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B3419246-6266-E86C-500E-7658CEC4D052"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F174BBAF-AE7C-FFD0-3F79-D2F021F08667" name="T_END_FORN_T_ENDERECO_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>E805371D-6AF6-0627-F93C-B548DDC1B230</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3419246-6266-E86C-500E-7658CEC4D052"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3909C969-8978-B777-0E54-F2640C2E958D" name="T_END_FORN_T_FORNECEDOR_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>A377FCCC-4EC5-3AC6-2650-E343FD2E66AC</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAF749D1-C72B-54BC-EB50-260595D351B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

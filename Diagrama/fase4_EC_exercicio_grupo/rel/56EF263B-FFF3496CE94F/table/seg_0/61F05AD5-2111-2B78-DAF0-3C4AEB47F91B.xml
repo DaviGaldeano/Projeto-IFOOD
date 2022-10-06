@@ -1,0 +1,234 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61F05AD5-2111-2B78-DAF0-3C4AEB47F91B" name="T_PEDIDO">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>0A8F0759-9C4E-CF09-09F5-661E6CB32286</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_pedido" id="C510F4B3-0012-95B0-9D1D-32EA0CF5BD4B">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>3D4FA5AE-D390-9311-A946-607169C2E9A1</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_pedido" id="636348D7-4923-CC1D-0F11-18FC5D0A0AD3">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>6A1E14EF-9984-4B99-AA3B-019456627B82</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_gorjeta" id="9AB8FDB0-CB71-8FDD-F1D8-D1D1FC0B0A0A">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>8EBA580D-8B99-E48A-81A1-DC71E59F647E</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_pedido" id="75DDBDBA-B874-28D1-696B-71CE076ECF27">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>B0E066EB-C238-FF3B-DF92-3EC971AEE9B5</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_prazo" id="E3FB4EC9-B5C5-7C90-D567-CF7158177DD4">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>CC9F7285-A3E2-844C-154B-CD7D02605AA8</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="T_CLIENTE_cd_cliente" id="87EFD3AF-6992-DB90-E719-026ACDF8DC2E">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>2B9EB1CA-2C1D-15EF-C58D-6EBC7686AEF9</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A58203D5-75B6-1430-4E5A-DAE273C7BA14" referredColumn="3289CE9E-CDC9-1CFF-4B08-7BDA5FFE3734"/>
+</associations>
+</Column>
+<Column name="T_ENTREGA_cd_tipo" id="4839F213-813B-3972-1B47-BAE7605567E0">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>213EC841-EDBE-CE4A-CA65-0F2F4B756A7E</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77C45BD1-0799-7A2E-4348-FCCD534CCF8C" referredColumn="A4DFF2C2-307E-4FEA-C7B3-726B6E183CCF"/>
+</associations>
+</Column>
+<Column name="T_PAGAMENTO_cd_pagamento" id="24AD38F3-BDA5-5456-AA6B-F7C69DF3D561">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>ECB2CFCC-6AF6-7781-DB63-71A55C703D62</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA35F3B8-24A6-68E9-047B-CDA040D6368D" referredColumn="5D5096AF-EE52-5522-9C05-43F53E5742FD"/>
+</associations>
+</Column>
+<Column name="cd_fornecedor" id="482D21E4-2E84-115A-8CF6-EC1A2EFEFBD8">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>72E34894-B658-C047-6E86-1557B0BD6030</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0464A6A-2F09-1C08-4D4C-CA1049913B3C" referredColumn="7C7169C6-304F-5F62-FC57-F4B8D359F1B2"/>
+</associations>
+</Column>
+<Column name="cd_entregador" id="E2630831-6855-B0F8-B315-3C8F5A129223">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>6575AC1D-A376-BF88-709F-93BE0F11D991</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F0464A6A-2F09-1C08-4D4C-CA1049913B3C" referredColumn="DEF9C416-F77B-8815-2068-C08ACD21A284"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D536CE5-239A-C7DA-08E6-3E3F302D0A7D" name="T_PEDIDO_PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>8E32AA7B-76B3-DCF5-3427-864843389014</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C510F4B3-0012-95B0-9D1D-32EA0CF5BD4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC9FC1A3-9D8D-C73C-6C31-DB214E6B158E" name="T_PEDIDO__IDX">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>406CFFE4-930B-863B-78A9-CDEFB8921321</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="4839F213-813B-3972-1B47-BAE7605567E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A952C55D-2AA1-C423-5BE1-C4BE2A84DA19" name="T_PEDIDO__IDXv1">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F1AA9C1A-09A7-5D6B-48F1-045346FECB94</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="24AD38F3-BDA5-5456-AA6B-F7C69DF3D561"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC63BB22-0ACC-0542-70AC-A5BE172B4449" name="T_PEDIDO_T_CLIENTE_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>C134ABC3-8E78-DDB9-46FD-6BD268E3A880</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87EFD3AF-6992-DB90-E719-026ACDF8DC2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="278C343C-8DBE-3431-E06B-CEA7734495CD" name="T_PEDIDO_T_ENTREGA_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>406CFFE4-930B-863B-78A9-CDEFB8921321</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4839F213-813B-3972-1B47-BAE7605567E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AEADDDD-4B6D-01E3-6CE3-9B7051B396AD" name="T_PEDIDO_T_PAGAMENTO_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>F1AA9C1A-09A7-5D6B-48F1-045346FECB94</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24AD38F3-BDA5-5456-AA6B-F7C69DF3D561"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B25752D-E688-19EE-C4AA-390EA3846C18" name="T_PEDIDO_FORNECER_ENTREGAR_FK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-05 22:41:05 UTC</createdTime>
+<generatorID>5BF370CB-CB0C-BB8C-CB3E-8B6D6CC947D3</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="482D21E4-2E84-115A-8CF6-EC1A2EFEFBD8"/>
+<colUsage columnID="E2630831-6855-B0F8-B315-3C8F5A129223"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

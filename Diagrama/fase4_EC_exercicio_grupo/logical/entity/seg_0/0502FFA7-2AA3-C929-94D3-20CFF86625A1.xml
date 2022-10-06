@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0502FFA7-2AA3-C929-94D3-20CFF86625A1" name="T_END_FORN">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:15:50 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_endereco" id="0E9C1039-2651-294A-8E2D-604199DA3C4A">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:16:54 UTC</createdTime>
+<generatorID>E805371D-6AF6-0627-F93C-B548DDC1B230</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>DB2A6B2B-0B39-623C-6C6D-EF1B9688321E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_fornecedor" id="199B7C3B-E668-000B-AB0E-3805931E3CF6">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:17:33 UTC</createdTime>
+<generatorID>A377FCCC-4EC5-3AC6-2650-E343FD2E66AC</generatorID>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<referedAttribute>90BDC1FA-706B-0441-5689-9DC0FB08946A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C9B4B2C0-296B-9AD7-A44C-82435A3CCD32" name="T_END_FORN PK">
+<createdBy>Pedroso</createdBy>
+<createdTime>2022-06-03 00:16:15 UTC</createdTime>
+<ownerDesignName>fase4_EC_exercicio_grupo</ownerDesignName>
+<engineerTo>
+<item key="56EF263B-A3BF-8FEE-EC7C-FFF3496CE94F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0E9C1039-2651-294A-8E2D-604199DA3C4A</attributeRef>
+<attributeRef>199B7C3B-E668-000B-AB0E-3805931E3CF6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
